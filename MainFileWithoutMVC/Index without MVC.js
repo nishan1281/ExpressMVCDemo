@@ -36,7 +36,7 @@ app.get("/users", (req, res) => {
     res.send(htmlForm);
 })
 
-//Handling of the POST data after clicking submit buttom in html form by user. 
+//routing. Handling of the POST data after clicking submit buttom in html form by user. 
 app.post("/users", (req, res) => {
     const name = req.body.name;     //procdur to receive the informations.
     const age = Number (req.body.age); //data pareses as string form. To convert to number.
